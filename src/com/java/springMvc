@@ -1,0 +1,14 @@
+package com.java.springmvc;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class SpringMVCDemo {
+	
+	@RequestMapping("/helloSpringMvc")
+	public String print(){
+		System.out.println("hello springMvc");
+		return "success";
+	}
+}
